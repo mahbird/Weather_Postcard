@@ -37,10 +37,11 @@ https://github.com/user-attachments/assets/113a706e-1558-40b3-8cf9-02a3e4cd63c4
 
 The Weather Postcard first connects to the internet, syncing time with NTP server, then it requests data from HKO API. 
 
-If any errors happen during any steps above, the relevant error message will be displayed. It will return again in 5 mins. If error still persists after 5 attempts, all subsequent retries will take place every 120 mins. The screen will not update until error is resolved.
+If any errors happen during any steps above, the relevant error message will be displayed. It will return again in 5 mins. If error still persists after 5 attempts, all subsequent retries will take place every 120 mins. The screen will not update until error is resolved. Error count is saved on the ESP32's NSV using Preferences library, so the count will remain until you have a successful load or if you clear the NVS manually.
 
+After sucessfully getting data, the display will refresh. Once the update is finished, the ESP32 will go into deep sleep until the next wake up interval. Because the internal timer of the ESP32 has about ~5% (according to google), there will be some fluctuations for the update time. 
 
-
+You can always manually press RST on your ESP32 to get data instantly.
 
 
 <h2>Materials needed: </h2>
