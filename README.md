@@ -150,34 +150,37 @@ Extract the zip files and open Weather_Postcard.ino in Arduino IDE, make appropi
 
 
 <h2>Configuable settings:</h2>
-All settings are found in the header file "configurations.h"
 
-ssid - your wifi SSID
+**configurations.h**
 
-password - your wifi password
+Settings with info are found in the header file "configurations.h"
 
-wakehour - The hour which the first update of the day starts, in 24 hour time. *Please keep it below 10, otherwise today min max temperature cannot show correctly.
+- ssid - your wifi SSID
+
+- password - your wifi password
+
+- wakehour - The hour which the first update of the day starts, in 24 hour time. *Please keep it below 10, otherwise today min max temperature cannot show correctly.
 
 *The min and max temperature of the current day is actually taken from the forecast and not from current weather, and the forecast of the current day disapper sometime after 10-11am, so if the weather postcard has not gotten any data from the HKO since the day changed, it will not have any actual data for the min max for the day (instead, the min max shown will be the min max for the next day.) I have checked HKO's API numberous time, but if you find the min max temperature for the current day elsewhere, let me know and I can adjust the code.
 
-sleephour - The hour of the last update**, in 24 hour time (e.g. 10pm = 22).
+- sleephour - The hour of the last update**, in 24 hour time (e.g. 10pm = 22).
 
-updateinterval - The frequency which the display is updated, in hours**.
+- updateinterval - The frequency which the display is updated, in hours**.
 
 **Update interval precedes sleep hour, so say you have set 3 hour update interval with 8am(8) wakehour and 10pm(22) sleephour, the last update will take place at 11pm.
 
-tmpClocation: Location of where the current temperature is displayed. Please refer to "locations.h" for the list of avaiable locations.
+- tmpClocation: Location of where the current temperature is displayed. Please refer to "locations.h" for the list of avaiable locations.
 
-rainlocation: Location of where the rainfall of last hour is displayed. Please refer to "locations.h" for the list of avaiable locations. 
+- rainlocation: Location of where the rainfall of last hour is displayed. Please refer to "locations.h" for the list of avaiable locations. 
 
-customtext: Any text you would like to display on the last line, though it can't show too many!
+- customtext: Any text you would like to display on the last line, though it can't show too many!
 
-time24h: Display the last update time in 24h or a.m./p.m.
+- time24h: Display the last update time in 24h or a.m./p.m.
 
-batterypin / nobattery: whether you are using ADCbatteryread, no need to change if you are using Firebeetle ESP32-C6
+- batterypin / nobattery: whether you are using ADCbatteryread, no need to change if you are using Firebeetle ESP32-C6
 
 
-Display Configurations: 
+**Display Configurations:**
 
 Configuration for the display is in "displayconfig.h"
 
