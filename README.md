@@ -146,7 +146,7 @@ Then connect the screen to the connector on the board. Pay attention to the orie
 - Download the code on this project's main page, (click on <> code -> Download ZIP). 
 ![download](https://github.com/user-attachments/assets/1ea66c3d-8c26-47a8-86db-87f056e0b4fb)
 
-Extract the zip files and open Weather_Postcard.ino in Arduino IDE, make appropiate settings as follows:
+Extract the zip files and open Weather_Postcard.ino in Arduino IDE, select your board and upload. It will take a while for the code to compile for the first time so please be patient.
 
 
 <h2>Configuable settings:</h2>
