@@ -299,9 +299,9 @@ drawString(15, 285, str_updatetime, LEFT, BOTTOM ,black);
 
 
 
-
-void drawString(int x, int y, String text, alignment align, alignY aligny, uint16_t color) {
-  int16_t  x1, y1; 
+// edit: realized I made a mistake here, but editing this will make the current layout a few pixels off, so I am just leaving it this way
+void drawString(int x, int y, String text, alignment align, alignY aligny, uint16_t color) { 
+    int16_t  x1, y1; 
   uint16_t w, h;
   u8g2Fonts.setForegroundColor(color);
   display.setTextWrap(false);
