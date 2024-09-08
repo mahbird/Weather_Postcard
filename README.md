@@ -111,6 +111,8 @@ ArduinoJson by bblanchon: https://github.com/bblanchon/ArduinoJson
 
 GxEPD2 by ZinggJM: https://github.com/ZinggJM/GxEPD2
 
+(and GxEPD2_4G if you are using b/w display: https://github.com/ZinggJM/GxEPD2_4G)
+
 u8g2 fonts by olikraus: https://github.com/olikraus/u8g2
 
 Adafruit_GFX by Adafruit: https://github.com/adafruit/Adafruit-GFX-Library
