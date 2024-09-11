@@ -19,8 +19,8 @@
 
 
 #ifdef Firebeetle2ESP32C6
-#define CS 1
-#define DC 18
+#define CS 18
+#define DC 1
 #define RST 9
 #define BUSY 14
 #endif
