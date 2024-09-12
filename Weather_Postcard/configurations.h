@@ -12,8 +12,8 @@ String tmpClocation = "Sha Tin"; // Temperature location, see "locations.h" for 
 String customtext = "Have a nice day"; // custom text at bottom, can't be too long or it will overflow
 bool time24h = 0;// 1 for display in 24hour time and 0 for am/pm update time
 
- #define nobattery // uncomment this if you are not using battery
-// #define batterypin 0 // change if you are using another board or not using battery
+// #define nobattery // uncomment this if you are not using battery
+#define batterypin 0 // change if you are using another board or not using battery
 
 
 //The following should not need changing since this calendar is specific to Hong Kong and no point using it elsewhere
