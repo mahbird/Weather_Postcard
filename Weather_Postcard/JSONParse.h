@@ -21,14 +21,11 @@ const String warnrq ="warnsum&lang=en"; // current weather warning
 char srsrq [60];
 
 
-int nowdayint;
+int nowday, nowmonth, nowyear, nowhour, nowminute;;
 int nowdaycheck = 0;
 int todaymintmpC;
 int todaymaxtmpC;
 
-
-String nowday, nowmonth, nowyear;
-int nowhour, nowminute;
 
 
 
@@ -113,8 +110,8 @@ pref.begin("weatherpostcard", false);
 nowdaycheck = pref.getInt("nowdaycheck", 0);
 
 
-if (nowdayint != nowdaycheck) {
-pref.putInt("nowdaycheck", nowdayint);
+if (nowday != nowdaycheck) {
+pref.putInt("nowdaycheck", nowday);
 pref.putInt("todaymintmpC", forecastminTmpC[i]);
 pref.putInt("todaymaxtmpC", forecastmaxTmpC[i]);}
 
@@ -404,15 +401,12 @@ return;
   }
   errorcode = 0;
  // Serial.println ("Configtime done");
-  nowyear = String((tmstruct.tm_year) +1900);
-  nowmonth = String((tmstruct.tm_mon)+1);
+  nowyear = (tmstruct.tm_year) +1900;
+  nowmonth = (tmstruct.tm_mon)+1;
   nowday = String(tmstruct.tm_mday);
-  nowdayint = tmstruct.tm_mday;
   nowhour = tmstruct.tm_hour;
   nowminute = tmstruct.tm_min;
  //Serial.printf("Now is %02d:%02d - %s/%s/%s\n", nowhour, nowminute, nowday, nowmonth, nowyear);
-snprintf (srsrq, sizeof(srsrq), "SRS&lang=en&rformat=json&year=%s&month=%s&day=%s", nowyear, nowmonth, nowday);
-if (nowday.length()==1){nowday = "0"+nowday;}
-if (nowmonth.length()==1){nowmonth = "0"+nowmonth;}
+snprintf (srsrq, sizeof(srsrq), "SRS&lang=en&rformat=json&year=%d&month=%d&day=%d", nowyear, nowmonth, nowday);
 errorcode = 0;
 }
