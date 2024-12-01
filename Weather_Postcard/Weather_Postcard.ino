@@ -99,9 +99,12 @@ void drawdisplay()
 
 //drawstampdate
    u8g2Fonts.setFont(datefont); 
-String printnowyear = String(nowyear%100);
+char printnowyear[2];
+      snprintf(printnowyear, sizeof(printnowyear), "%02d", (nowyear%100));
+char printnowmonth[2];
+snprintf(printnowmonth, sizeof(printnowmonth), "%02d", nowmonth);
 drawString(223,78, String(nowday), LEFT, MID, red);
-drawString(249,78, String(nowmonth), CENTER, MID, red);
+drawString(249,78, printnowmonth, CENTER, MID, red);
     drawString(274,78, printnowyear, RIGHT, MID, red);
 
 
