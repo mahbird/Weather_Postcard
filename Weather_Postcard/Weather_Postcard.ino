@@ -43,6 +43,16 @@ void setup()
 //Serial.println("Power On");
 
 //Serial.printf ("Error code:%d - count:%d\n", errorcode, errorcount); 
+/*
+display.init(0);
+display.setFullWindow();
+display.firstPage();
+do{
+  display.fillScreen(white);
+}
+while (display.nextPage());
+display.powerOff();
+esp_deep_sleep_start();*/
 
 wifiNTP(); //connect to wifi and sync with NTP
 //get information
@@ -99,13 +109,15 @@ void drawdisplay()
 
 //drawstampdate
    u8g2Fonts.setFont(datefont); 
-char printnowyear[2];
+char printnowyear[3];
       snprintf(printnowyear, sizeof(printnowyear), "%02d", (nowyear%100));
-char printnowmonth[2];
+char printnowmonth[3];
 snprintf(printnowmonth, sizeof(printnowmonth), "%02d", nowmonth);
-drawString(223,78, String(nowday), LEFT, MID, red);
-drawString(249,78, printnowmonth, CENTER, MID, red);
-    drawString(274,78, printnowyear, RIGHT, MID, red);
+char printnowday[3];
+snprintf(printnowday, sizeof(printnowday), "%02d", nowday);
+drawString(223,78, printnowday, LEFT, MID, red);
+drawString(247,78, printnowmonth, CENTER, MID, red);
+drawString(274,78, printnowyear, RIGHT, MID, red);
 
 
 

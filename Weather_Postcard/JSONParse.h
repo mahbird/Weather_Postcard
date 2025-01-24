@@ -120,7 +120,7 @@ todaymaxtmpC = pref.getInt("todaymaxtmpC", 0);
 pref.end();
 
 
-if (weatherForecast_item["forecastDate"].as<String>() ==  nowyear + nowmonth + nowday){
+if (weatherForecast_item["forecastDate"].as<String>() ==  String(nowyear*1000 + nowmonth*100 + nowday)){
    i-=1; 
 } 
 
@@ -403,7 +403,7 @@ return;
  // Serial.println ("Configtime done");
   nowyear = (tmstruct.tm_year) +1900;
   nowmonth = (tmstruct.tm_mon)+1;
-  nowday = String(tmstruct.tm_mday);
+  nowday = tmstruct.tm_mday;
   nowhour = tmstruct.tm_hour;
   nowminute = tmstruct.tm_min;
  //Serial.printf("Now is %02d:%02d - %s/%s/%s\n", nowhour, nowminute, nowday, nowmonth, nowyear);
