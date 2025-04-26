@@ -21,7 +21,7 @@ Special thanks to the developer for the libraries (and the associated libararies
 ArduinoJson by bblanchon: https://github.com/bblanchon/ArduinoJson
 GxEPD2 by ZinggJM: https://github.com/ZinggJM/GxEPD2
 (and GxEPD2_4G if you are using b/w display: https://github.com/ZinggJM/GxEPD2_4G)
-u8g2 fonts and U8g2_for_Adafruit_GFX by olikraus: https://github.com/olikraus/u8g2 and https://github.com/olikraus/U8g2_for_Adafruit_GFX
+U8g2_for_Adafruit_GFX by olikraus: https://github.com/olikraus/U8g2_for_Adafruit_GFX
 Adafruit_GFX by Adafruit: https://github.com/adafruit/Adafruit-GFX-Library
 */
 
