@@ -5,7 +5,7 @@ You are free to modify this code as you like, but do not redistribute modified c
 Commerical use is not allowed.
 Please note that the weather informations are taken from the publicly available Hong Kong Observatory
 Open Data API (https://www.hko.gov.hk/en/weatherAPI/doc/files/HKO_Open_Data_API_Documentation.pdf) (Version 1.11, Date : Nov, 2023)
-It it possible that this software may not be compatiable if the API changed in the future.
+It is possible that this software may not be compatiable if the API changed in the future.
 
 本天氣明信片以及圖示均為mahbird基於香港天文台的免費資訊制作及繪畫，於Arduino IDE 2.3.2編寫，並於github免費發佈，僅供個人使用，
 轉載需保留原訊息，不得用於其他地方，可按需要自行修改但不得作二次發佈，不得用於商業用途。
@@ -21,7 +21,7 @@ Special thanks to the developer for the libraries (and the associated libararies
 ArduinoJson by bblanchon: https://github.com/bblanchon/ArduinoJson
 GxEPD2 by ZinggJM: https://github.com/ZinggJM/GxEPD2
 (and GxEPD2_4G if you are using b/w display: https://github.com/ZinggJM/GxEPD2_4G)
-u8g2 fonts by olikraus: https://github.com/olikraus/u8g2
+u8g2 fonts and U8g2_for_Adafruit_GFX by olikraus: https://github.com/olikraus/u8g2 and https://github.com/olikraus/U8g2_for_Adafruit_GFX
 Adafruit_GFX by Adafruit: https://github.com/adafruit/Adafruit-GFX-Library
 */
 
