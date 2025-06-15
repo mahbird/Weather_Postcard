@@ -1,16 +1,26 @@
+© 2024-2025 mahbird@github
+
 ## License Grant
 
 You are granted a non-exclusive, non-transferable, revocable license to use this software for personal, non-commercial purposes.
 
+
 ## Restrictions
 
-- You may not redistribute, sell, or share copies of this software, in whole or in part, without prior written permission from the author.
-- You may not modify, adapt, or create derivative works based on this software for redistribution.
+You may not modify, adapt, or create derivative works based on this software for redistribution.
+
+You may not redistribute, sell, or share copies of this software, in whole or in part, with or without modification, unless you have obtained prior written permission from the author.
+
 
 ## Disclaimer
 
-This software is provided "as-is," without any express or implied warranty. The author is not liable for any damages arising from the use of this software.
+This project is provided "as-is," without any express or implied warranty. The author is not liable for any damages arising from the use of this project.
+This project shall not be held liable for any loss, destruction or damages howsoever arising out of or in relation to any transmission to and from this firmware over the Internet.
+
+## Additional Notes
+
+This project uses dependencies from other libraries, and details of service providers are listed on Readme.md.
 
 ## Acceptance
 
-By using this software, you agree to abide by the terms of this license.
+By using this project, you agree to abide by the terms of this license.
