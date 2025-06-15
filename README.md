@@ -201,6 +201,16 @@ This is my first project on github, if you notice anything wrong with the code, 
 ********
 
 
+**About Weather Postcard V2**
+
+Weather Postcard V2 made slight modification to infromation displayed and provides an additional post-it feature to send text/ images through web interface and is still ongoing.
+
+
+********
+
+
+Weather Postcard is a hobbyist project, the source code is available for free on github. No usage data is collected by Weather Postcard. Weather Postcard fetches information directly with hosts open API providers. Your WiFi information is stored directly in your device. If you flashes the ready-to-use ".bin" files, please use "/clearNVS" on settings menu to clear your saved settings.
+
 本天氣明信片以及圖示均為mahbird基於香港天文台的免費資訊制作及繪畫，於Arduino IDE 2.3.2編寫，並於github免費發佈，僅供個人使用，
 轉載需保留原訊息，不得用於其他地方，可按需要自行修改但不得作二次發佈，不得用於商業用途。
 本程序基於香港天文台的免費API (https://www.hko.gov.hk/tc/weatherAPI/doc/files/HKO_Open_Data_API_Documentation_tc.pdf) (Version 1.11, Date : Nov, 2023)
@@ -213,8 +223,6 @@ The code is distributed for free on github. For personal use only. Please retain
 Please note that the weather informations are taken from the publicly available Hong Kong Observatory Open Data API (https://www.hko.gov.hk/en/weatherAPI/doc/files/HKO_Open_Data_API_Documentation.pdf) (Version 1.11, Date : Nov, 2023). It it possible that this software may not be compatiable if the API changed in the future.
 
 
-
-
 Special thanks to the developer for the libraries (and the associated libararies in the libraries) used in this project:
 
 ArduinoJson by bblanchon: https://github.com/bblanchon/ArduinoJson
@@ -225,8 +233,13 @@ u8g2 fonts by olikraus: https://github.com/olikraus/u8g2
 
 Adafruit_GFX by Adafruit: https://github.com/adafruit/Adafruit-GFX-Library
 
+NTP: time.nist.gov, pool.ntp.org, stdtime.gov.hk, time.google.com
 
+ESPAsyncWebServer/ AsyncTCP by me-no-dev: https://github.com/me-no-dev/ESPAsyncWebServer / https://github.com/me-no-dev/AsyncTCP (V2 only)
 
+QR code generator by nayuki: https://github.com/nayuki/QR-Code-generator (V2 only)
+
+##[License](License)
 
 Disclaimer
 
