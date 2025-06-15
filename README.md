@@ -224,3 +224,10 @@ GxEPD2 by ZinggJM: https://github.com/ZinggJM/GxEPD2
 u8g2 fonts by olikraus: https://github.com/olikraus/u8g2
 
 Adafruit_GFX by Adafruit: https://github.com/adafruit/Adafruit-GFX-Library
+
+
+
+
+Disclaimer
+
+This project contains information that is copied or extracted from data made available on the websites of the Hong Kong Observatory (the "Observatory") including This link will open in a new windowhttps://www.weather.gov.hk, This link will open in a new windowhttps://www.hko.gov.hk, and the subdomains of "weather.gov.hk" and "hko.gov.hk". The provision of the information copied or extracted from or a link to the Observatory’s websites shall not be constituted as any form of co-operation or affiliation by the Observatory with any person in relation to this project or any contents herein. Nothing in this project shall give rise to any representation, warranty or implication that the Observatory agrees with, approves of, recommends or endorses this project. The Observatory does not have any liability, obligation or responsibility whatsoever for any loss, destruction or damages (including without limitation consequential loss, destruction or damages) howsoever arising from or in respect of your use or misuse of or reliance on or inability to use any contents herein.
