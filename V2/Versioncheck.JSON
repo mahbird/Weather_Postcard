@@ -1,6 +1,6 @@
 {
-  "version": "2.0.0",
-  "updatemessage_tc": "-Version 2 初始版本",
-  "updatemessage_en": "-Version 2 Initial release",
+  "version": "2.0.0b",
+  "updatemessage_tc": "測試",
+  "updatemessage_en": "testing",
   "firmwareURL": "https://raw.githubusercontent.com/mahbird/Weather_Postcard/refs/heads/main/V2/firmware.bin"
 }
