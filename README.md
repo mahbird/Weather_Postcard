@@ -203,7 +203,7 @@ This is my first project on github, if you notice anything wrong with the code, 
 
 **About Weather Postcard V2**
 
-Weather Postcard V2 made slight modification to infromation displayed and provides an additional post-it feature to send text/ images through web interface and is still ongoing.
+Weather Postcard V2 made slight modification to information displayed and added webserver settings. However, the code was sort of in a mess and made things much more complex then needed. I am currently working on V3 with Chinese display support and should hopefully be release the source code for that once it's done, but still a lot of work to do!
 
 
 ********
