@@ -1,5 +1,5 @@
 {
-  "version": "3.0.0b",
+  "version": "3.0.0b1",
   "updatemessage_tc": "測試，請勿更新",
   "updatemessage_en": "Testing in progress",
   "firmwareURL": "https://raw.githubusercontent.com/mahbird/Weather_Postcard/refs/heads/main/V3/firmwareV3.bin"
