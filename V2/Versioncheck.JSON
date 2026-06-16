@@ -1,0 +1,6 @@
+{
+  "version": "3.0.0b",
+  "updatemessage_tc": "v3測試, 新增中文顯示介面，可選顯示當前天氣概況，更新後預設成中文和顯示當前天氣概況，之後可在設定變更",
+  "updatemessage_en": "v3 testing",
+  "firmwareURL": "https://raw.githubusercontent.com/mahbird/Weather_Postcard/refs/heads/main/V3/firmwareV3.bin"
+}
