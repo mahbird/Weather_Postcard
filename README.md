@@ -10,7 +10,7 @@ Weather Postcard uses Hong Kong Observatory Open Data API, so can be used for we
 
 I am happy to introduce a new version of Weather Postcard to you all. 
 
-
+<img src="https://raw.githubusercontent.com/mahbird/Weather_Postcard/refs/heads/main/v3zh.jpg" height="300"><img src="https://raw.githubusercontent.com/mahbird/Weather_Postcard/refs/heads/main/v3en.jpg" height="300">
 
 Chinese vs English display
 
