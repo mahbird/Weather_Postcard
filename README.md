@@ -5,7 +5,41 @@ It is available in 4 color or in black/white eink screen. (With limited support 
 
 Weather Postcard uses Hong Kong Observatory Open Data API, so can be used for weather in Hong Kong only.
 
+*****
+<h2>June 2026 Big Update</h2>
 
+I am happy to introduce a new version of Weather Postcard to you all. 
+
+
+
+Chinese vs English display
+
+What's new:
+- Now supports Chinese or English display - just choose your desired display language in configurations.cpp
+
+- Forecast description - simple forecast description is shown below PSR (Possibility of significant rain)
+
+- Custom text section now supports current weather description - ability to show current weather description in place of custom text
+
+- If rain chance for today is higher than 30%, it would be shown under the min-max temperature today (under the stamp)
+
+- Added extra warning icons: The only omitted warning icons now are: Frost,  Flooding in the Northern New Territories and Tsunami (these are too rare and don't concern most people) 
+
+
+**IMPORTANT**
+
+Before you update your existing Weather Postcard, back up all your existing configurations and especially your displayconfig.h
+
+configurations are now in configurations.cpp instead of configurations.h
+
+Depending on your board, please choose a partition scheme that has 1.5MB or more for the app
+
+I have kept the old version on the same repo in case people prefer the old version - Use the files in Weather_Postcard_zh folder for the new version and Weather_Postcard folder for the original release version.
+
+*****
+
+
+<h1>The Guide</h1>
 
 <img src="https://github.com/user-attachments/assets/34ad3884-371f-4965-a3cb-2b93d82f40f7" height="300"><img src="https://github.com/user-attachments/assets/905c8267-9e64-404b-abd4-6f26ee25fbc8" height="300">
 
@@ -146,10 +180,14 @@ Adafruit_GFX by Adafruit: https://github.com/adafruit/Adafruit-GFX-Library
 Then connect the screen to the connector on the board. Pay attention to the orientation of the screen, usually both the display and the adaptor board should be facing up , but this might be the opposite for some adaptor boards. If screen doesn't work, try the other way round.
 
 
-- Download the code on this project's main page, (click on <> code -> Download ZIP). 
+- Download the repository and extract the zip file. (click on <> code -> Download ZIP). 
 ![download](https://github.com/user-attachments/assets/1ea66c3d-8c26-47a8-86db-87f056e0b4fb)
 
-Extract the zip files and open Weather_Postcard.ino in Arduino IDE, select your board and upload. It will take a while for the code to compile for the first time so please be patient.
+If you prefer the original release you just need the files in the folder Weather_Postcard and you can discard the rest.
+
+If you prefer the latest release you just need the files in the folder Weather_Postcard_zh and you can discard the rest.
+
+Open the .ino file in Arduino IDE, select your board and upload. It will take a while for the code to compile for the first time so please be patient.
 
 
 <h2>Configuable settings:</h2>
@@ -201,14 +239,6 @@ This is my first project on github, if you notice anything wrong with the code, 
 ********
 
 
-**About Weather Postcard V2**
-
-Weather Postcard V2 made slight modification to information displayed and added webserver settings. However, the code was sort of in a mess and made things much more complex then needed. I am currently working on V3 with Chinese display support and should hopefully be release the source code for that once it's done, but still a lot of work to do!
-
-
-********
-
-
 Weather Postcard is a hobbyist project, the source code is available for free on github. No usage data is collected by Weather Postcard. Weather Postcard fetches information directly with hosts open API providers. Your WiFi information is stored directly in your device. If you flashes the ready-to-use ".bin" files, please use "/clearNVS" on settings menu to clear your saved settings.
 
 本天氣明信片以及圖示均為mahbird基於香港天文台的免費資訊制作及繪畫，於Arduino IDE 2.3.2編寫，並於github免費發佈，僅供個人使用，
@@ -235,9 +265,9 @@ Adafruit_GFX by Adafruit: https://github.com/adafruit/Adafruit-GFX-Library
 
 NTP: time.nist.gov, pool.ntp.org, stdtime.gov.hk, time.google.com
 
-ESPAsyncWebServer/ AsyncTCP by me-no-dev: https://github.com/me-no-dev/ESPAsyncWebServer / https://github.com/me-no-dev/AsyncTCP (V2 only)
+ESPAsyncWebServer/ AsyncTCP by me-no-dev: https://github.com/me-no-dev/ESPAsyncWebServer / https://github.com/me-no-dev/AsyncTCP (.bin version only)
 
-QR code generator by nayuki: https://github.com/nayuki/QR-Code-generator (V2 only)
+QR code generator by nayuki: https://github.com/nayuki/QR-Code-generator (.bin version only)
 
 ##[License](License)
 
